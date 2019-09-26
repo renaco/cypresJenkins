@@ -6,7 +6,7 @@ pipeline {
   stages {
     stage('Cloning Git') {
       steps {
-        git 'https://github.com/DaSandoval/cypresJenkins'
+        git 'https://github.com/renaco/cypresJenkins'
       }
     }
     stage('Install dependencies') {
@@ -16,7 +16,7 @@ pipeline {
     }
     stage('Test') {
       steps {
-         bat 'npm run test'
+        bat 'npm run test'
       }
     }
   }
